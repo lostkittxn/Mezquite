@@ -1,0 +1,21 @@
+{
+  "name": "El Mezquite",
+  "short_name": "El Mezquite",
+  "description": "Más que una cafetería, somos una comunidad.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#459347",
+  "icons": [
+    {
+      "src": "images/fav.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-title" content="El Mezquite">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/x-icon" href="images/fav.svg">
+  <title>Sobre Nosotros - El Mezquite</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/new-gerbil" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Logo El Mezquite">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contact.html">Encuéntranos</a></li>
+      </ul>
+      <button class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="hero-text">
+        <h1>Nuestra Historia</h1>
+        <p>Conoce el corazón y el alma de El Mezquite</p>
+      </div>
+    </section>
+
+    <div class="section-separator"></div>
+
+      <section id="director" class="info-section">
+        <div class="info-container">
+          <div class="text-side">
+            <h2>Nuestra Misión</h2>
+            <p>En Mezquite Coffee N' Bread, nos dedicamos a la misión de superar las expectativas de nuestros clientes, brindando un café excepcional, panadería artesanal hecha con amor y un servicio atento que convierta cada visita en un momento especial.</p>
+          </div>
+          <div class="image-side">
+            <img src="images/img4.JPG" alt="Imagen del Menu">
+          </div>
+        </div>
+      </section>
+
+      <div class="scroll-left">
+        <p>ᴍᴇᴢǫᴜɪᴛᴇ ᴄᴏꜰꜰᴇᴇ ɴ ʙʀᴇᴀᴅ ➪ AᴠᴇNɪᴅᴀ ᴅᴇʟ ᴄʜᴀʀʀᴏ 305 ⋆.˚☕︎</p>
+        </div>
+
+            <div class="gallery-container">
+                <div class="gallery duplicated">
+                    <img src="images/img1.JPG" alt="Imagen 1">
+                    <img src="images/img2.JPG" alt="Imagen 2">
+                    <img src="images/img3.jpg" alt="Imagen 3">
+                    <img src="images/img4.jpg" alt="Imagen 4">
+                    <img src="images/img5.jpg" alt="Imagen 5">
+                    <img src="images/img1.JPG" alt="Imagen 1">
+                    <img src="images/img2.JPG" alt="Imagen 2">
+                    <img src="images/img3.jpg" alt="Imagen 3">
+                    <img src="images/img4.jpg" alt="Imagen 4">
+                    <img src="images/img5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+
+            <script>
+               const galleryContainer = document.querySelector('.gallery-container');
+            const gallery = document.querySelector('.gallery');
+            const images = document.querySelectorAll('.gallery img');
+            const imageWidth = images[0].offsetWidth + 30;
+            const galleryWidth = imageWidth * images.length / 2;
+            let scrollPosition = 0;
+            let scrollSpeed = 1;
+            let animationInterval;
+
+            function scrollGallery() {
+                scrollPosition += scrollSpeed;
+                gallery.style.transform = `translateX(-${scrollPosition}px)`;
+
+
+                if (scrollPosition >= galleryWidth) {
+                    scrollPosition = 0;
+                }
+            }
+
+            function startAutoScroll() {
+                animationInterval = setInterval(scrollGallery, 30);
+            }
+
+            function stopAutoScroll() {
+                clearInterval(animationInterval);
+            }
+
+            galleryContainer.addEventListener('mouseenter', stopAutoScroll);
+            galleryContainer.addEventListener('mouseleave', startAutoScroll);
+
+            startAutoScroll();
+          </script>
+
+            <div class="section-separator"></div>
+
+            <section class="redez">
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-f8eb6662-d377-4a24-b0d9-1c1ffe58a7f0" data-elfsight-app-lazy></div>
+
+                <div class="section-separator"></div>
+
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-0bba1bbc-ce4e-42e7-ae13-646593edff96" data-elfsight-app-lazy></div>
+
+
+            </section>
+        </div>
+  </main>
+
+  <div class="section-separator"></div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section contact-ubicacion">
+        <h3>Contacto y Ubicación</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Av del Charro 305, 32417 Juárez, Chih.</p>
+        <p><i class="fas fa-calendar"></i> Lunes a Sábado: 9 AM a 9 PM<br>[Domingos Descansamos]</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:mezquitecoffeenbread@gmail.com"> mezquitecoffeenbread@gmail.com</a></p>
+      </div>
+      <div class="footer-logo">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="Logo El Mezquite">
+        </a>
+      </div>
+      <div class="footer-section quick-links">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="contact.html">Encuéntranos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/p/Mezquite-Coffee-N-Bread-100088676104056/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/mezquite_coffeenbread/?igshid=Nzg3NjI1NGI%3D" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 El Mezquite. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="El Mezquite">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> </head>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="images/fav.svg">
+    <title>Menú - El Mezquite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/new-gerbil" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Logo El Mezquite">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Encuéntranos</a></li>
+            </ul>
+            <button class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <section class="menu-hero">
+            <div class="hero-text">
+                <h1>Nuestro Menú</h1>
+                <p>Descubre nuestra deliciosa selección de café, desayunos y más.</p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+
+        <section class="menu-categories">
+            <div class="container">
+                <button class="category-button active" data-category="todos">Todos</button>
+                <button class="category-button" data-category="cafe">Café</button>
+                <button class="category-button" data-category="alimentos">Alimentos</button>
+                <button class="category-button" data-category="bebidas">Bebidas</button>
+                <button class="category-button" data-category="especiales">Desayunos</button>
+            </div>
+        </section>
+
+        <section class="menu-items">
+            <div class="container grid">
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1622647306301-176abdc3f209?q=80&w=1549&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Café Americano">
+                    <div class="item-details">
+                        <h3>Café Americano</h3>
+                        <p class="description">Un café clásico, suave y aromático, perfecto para empezar el día.</p>
+                        <span class="price">$40 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1664142638093-9a78da96c425?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Espresso">
+                    <div class="item-details">
+                        <h3>Espresso</h3>
+                        <p class="description">Una pequeña y potente dosis de café concentrado, con un sabor intenso y crema.</p>
+                        <span class="price">$30 MXN</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1664137432944-69ee3529a875?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cortado">
+                    <div class="item-details">
+                        <h3>Cortado</h3>
+                        <p class="description">Espresso con una pequeña cantidad de leche tibia para suavizar su intensidad.</p>
+                        <span class="price">$35 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1579265898841-79c7890d69cf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flat White">
+                    <div class="item-details">
+                        <h3>Flat White</h3>
+                        <p class="description">Un espresso doble con leche vaporizada, creando una textura sedosa y un sabor equilibrado.</p>
+                        <span class="price">$45 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1497616657202-b03db964b01d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cappuccino">
+                    <div class="item-details">
+                        <h3>Cappuccino</h3>
+                        <p class="description">Clásico café italiano con espresso, leche vaporizada y una generosa capa de espuma de leche.</p>
+                        <span class="price">$50 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1462917882517-e150004895fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Latte">
+                    <div class="item-details">
+                        <h3>Latte</h3>
+                        <p class="description">Un cremoso café con espresso y una mayor proporción de leche vaporizada, ideal para los amantes de la suavidad.</p>
+                        <span class="price">$50 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1649023384041-555d35454897?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mocca">
+                    <div class="item-details">
+                        <h3>Mocca</h3>
+                        <p class="description">La combinación perfecta de espresso, chocolate y leche vaporizada, coronado con crema batida.</p>
+                        <span class="price">$60 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1629022194335-b2eca031e320?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Espresso Tonic">
+                    <div class="item-details">
+                        <h3>Espresso Tonic</h3>
+                        <p class="description">Una bebida refrescante con espresso, agua tónica y un toque cítrico, ideal para los días calurosos.</p>
+                        <span class="price">$60 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://images.unsplash.com/photo-1700768400970-428c50bffc11?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sándwich de Pollo">
+                    <div class="item-details">
+                        <h3>Sándwich de Pollo</h3>
+                        <p class="description">Delicioso sándwich con jugoso pollo, vegetales frescos y aderezo especial en pan rústico.</p>
+                        <span class="price">$95 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://images.unsplash.com/photo-1700937244987-92488ab2ada5?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sándwich de Pavo">
+                    <div class="item-details">
+                        <h3>Sándwich de Pavo</h3>
+                        <p class="description">Tiernas rebanadas de pavo, queso, lechuga y tomate en pan integral, una opción ligera y sabrosa.</p>
+                        <span class="price">$75 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://assets.unileversolutions.com/recipes-v2/121648.jpg" alt="Sándwich de Pizza">
+                    <div class="item-details">
+                        <h3>Sándwich de Pizza</h3>
+                        <p class="description">Un giro a la pizza tradicional, con ingredientes de pizza entre dos rebanadas de pan tostado.</p>
+                        <span class="price">$85 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://images.unsplash.com/photo-1655279562015-047c3da9a271?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sándwich Vegetariano">
+                    <div class="item-details">
+                        <h3>Sándwich Vegetariano</h3>
+                        <p class="description">Variedad de vegetales frescos, queso y aderezo ligero en pan artesanal.</p>
+                        <span class="price">$80 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/b8/c2/35/pulled-pork-bagel.jpg" alt="Bagel Pulled Pork">
+                    <div class="item-details">
+                        <h3>Bagel Pulled Pork</h3>
+                        <p class="description">Suave bagel tostado relleno de cerdo deshebrado en salsa BBQ, una explosión de sabor.</p>
+                        <span class="price">$95 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://images.unsplash.com/photo-1623691752358-0be1e4235183?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avo Toast">
+                    <div class="item-details">
+                        <h3>Avo Toast</h3>
+                        <p class="description">Pan tostado con aguacate machacado, un toque de limón, sal y pimienta, perfecto para un desayuno ligero.</p>
+                        <span class="price">$65 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="alimentos">
+                    <img src="https://images.unsplash.com/photo-1529059997568-3d847b1154f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ensalada">
+                    <div class="item-details">
+                        <h3>Ensalada</h3>
+                        <p class="description">Fresca mezcla de lechugas, vegetales de temporada, proteína a elección y aderezo casero.</p>
+                        <span class="price">$95 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bebidas">
+                    <img src="https://images.unsplash.com/photo-1534349842105-3ca31a513556?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB4MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Café Helado">
+                    <div class="item-details">
+                        <h3>Café Helado</h3>
+                        <p class="description">Café recién preparado, enfriado y servido con hielo, una bebida refrescante y revitalizante.</p>
+                        <span class="price">$40 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bebidas">
+                    <img src="https://images.unsplash.com/photo-1623084918757-56d74eb2c650?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fExpbW9uYWRhfGVufDB8fDB8fHww" alt="Limonada">
+                    <div class="item-details">
+                        <h3>Limonada</h3>
+                        <p class="description">Clásica limonada casera, dulce y ácida, con un toque de menta para refrescar.</p>
+                        <span class="price">$30 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especiales">
+                    <img src="https://images.unsplash.com/photo-1599789197514-47270cd526b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chilaquiles">
+                    <div class="item-details">
+                        <h3>Chilaquiles</h3>
+                        <p class="description">Totopos de maíz bañados en salsa roja o verde, con queso, crema, cebolla y proteína a elección.</p>
+                        <span class="price">$75 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especiales">
+                    <img src="https://assets.afcdn.com/story/20150910/761200_w1020h765c1cx511cy250.jpg" alt="Bagel de Huevo">
+                    <div class="item-details">
+                        <h3>Bagel de Huevo</h3>
+                        <p class="description">Bagel tostado con huevo revuelto, queso y tocino o jamón, una opción completa para el desayuno.</p>
+                        <span class="price">$80 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especiales">
+                    <img src="https://images.unsplash.com/photo-1620921575116-fb8902865f81?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pan Francés">
+                    <div class="item-details">
+                        <h3>Pan Francés</h3>
+                        <p class="description">Rebanadas de pan brioche sumergidas en una mezcla de huevo y leche, doradas a la perfección y servidas con fruta y miel.</p>
+                        <span class="price">$75 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especiales">
+                    <img src="https://images.unsplash.com/photo-1664350436914-9674b685a7e3?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hot Cakes">
+                    <div class="item-details">
+                        <h3>Hot Cakes</h3>
+                        <p class="description">Suaves y esponjosos hot cakes, servidos con mantequilla, miel de maple y tu elección de fruta fresca.</p>
+                        <span class="price">$75 MXN</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especiales">
+                    <img src="https://plus.unsplash.com/premium_photo-1675676534869-086e7b3d081d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnVsbCUyMGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Mezquite Breakfast">
+                    <div class="item-details">
+                        <h3>Mezquite Breakfast</h3>
+                        <p class="description">Un desayuno completo con huevos al gusto, tocino o jamón, frijoles refritos y tortillas o pan tostado.</p>
+                        <span class="price">$90 MXN</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <p class="disclaimer menu-disclaimer">
+            Tenga en cuenta que este menú e imágenes son únicamente para fines de demostración.
+        </p>
+    </main>
+
+    <div class="section-separator"></div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-ubicacion">
+                <h3>Contacto y Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. del Charro 305, 32417 Juárez, Chih.</p>
+                <p><i class="fas fa-calendar"></i> De Nueve AM a Nueve PM<br>[Domingos Descansamos]</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:mezquitecoffeenbread@gmail.com"> mezquitecoffeenbread@gmail.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Logo El Mezquite">
+                </a>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Encuéntranos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/Mezquite-Coffee-N-Bread-100088676104056/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/mezquite_coffeenbread/?igshid=Nzg3NjI1NGI%3D" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 El Mezquite. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
