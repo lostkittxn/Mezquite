@@ -500,7 +500,6 @@ header.menu-active .logo-container {
   left: 0;
   width: 100%;
   height: 100%;
- 
   background-color: rgba(51, 89, 68, 0.65);
   pointer-events: none;
   z-index: 0;
@@ -515,12 +514,13 @@ header.menu-active .logo-container {
 .menu-hero h1 {
   font-size: 5.5rem;
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
 }
 
 .menu-hero p {
   font-size: 1.5rem;
- 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 
